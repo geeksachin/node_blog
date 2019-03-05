@@ -1,2 +1,2 @@
-# node_blog
+# Node Blog
 We are creating blog in nodejs
