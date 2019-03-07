@@ -20,6 +20,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+console.log('Server Run on : ', "http://127.0.0.1:"+port);
 
 /**
  * Listen on provided port, on all network interfaces.
