@@ -21,6 +21,11 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { page: 'Contact', menuId:'contact' });
 });
 
+/* For Admin */
+router.get('/admin', function(req, res, next) {
+  res.render('admin/index', { page: 'Admin', menuId:'admin' });
+});
+
 module.exports = router;
 
 
