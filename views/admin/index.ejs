@@ -13,7 +13,18 @@
 
   <div class="page-wrapper mdc-toolbar-fixed-adjust">
   
-  <% include ../admin/pages/users %>
+  <% if(menuId == 'admin') { %>
+
+  	<% include ../admin/pages/dashboard %>
+
+  <% }else if(menuId == 'users') { %>
+
+  	<% include ../admin/pages/users %>
+
+  <% }else if(menuId == 'createUser') { %>
+
+  	<% include ../admin/pages/create_user %>
+  <% } %>
   
   <% include ../admin/partials/footer %>
 
