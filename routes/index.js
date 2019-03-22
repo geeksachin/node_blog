@@ -31,6 +31,11 @@ router.get('/users', function(req, res, next) {
   res.render('admin/index', { page: 'Users', menuId:'users' });
 });
 
+/* For Admin */
+router.get('/userCreate', function(req, res, next) {
+  res.render('admin/index', { page: 'Users Form', menuId:'createUser' });
+});
+
 module.exports = router;
 
 
