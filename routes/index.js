@@ -26,6 +26,11 @@ router.get('/admin', function(req, res, next) {
   res.render('admin/index', { page: 'Admin', menuId:'admin' });
 });
 
+/* For Admin */
+router.get('/users', function(req, res, next) {
+  res.render('admin/index', { page: 'Users', menuId:'users' });
+});
+
 module.exports = router;
 
 
